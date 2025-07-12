@@ -17,7 +17,7 @@ const Navbar = () => {
   }, [])
 
   const navItems = [
-    { name: 'Home', path: '/portfolio' },
+    { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Projects', path: '/projects' },
     { name: 'Contact', path: '/contact' },
@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
-        <Link to="/portfolio" className="nav-logo">
+        <Link to="/" className="nav-logo">
           <span className="logo-text">{'<Portfolio/>'}</span>
         </Link>
         
