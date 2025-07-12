@@ -132,10 +132,6 @@ const Home = () => {
             <div className="stat-number">15+</div>
             <div className="stat-label">Technologies Learned</div>
           </div>
-          <div className="stat-item">
-            <div className="stat-number">100%</div>
-            <div className="stat-label">Commitment</div>
-          </div>
         </div>
       </section>
     </div>
