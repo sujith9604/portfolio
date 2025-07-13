@@ -144,7 +144,8 @@
 
 .project-image {
   position: relative;
-  height: 200px;
+  aspect-ratio: 2.5 / 1.2;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -156,12 +157,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-}
-
-.image-placeholder::before {
-  content: '🖼️';
-  font-size: 3rem;
-  opacity: 0.3;
 }
 
 .project-overlay {
@@ -341,14 +336,6 @@
 
   .featured-section {
     margin-bottom: 4rem;
-  }
-
-  .project-image {
-    height: 150px;
-  }
-
-  .image-placeholder::before {
-    font-size: 2rem;
   }
 
   .project-title {
