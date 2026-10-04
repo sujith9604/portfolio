@@ -1,0 +1,28 @@
+/* src/pages/ThankYou.css: one small line at the bottom of every page */
+.thanks {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  font-size: 0.85rem;
+  color: #8a8a8a;
+}
+
+.thanks-heart {
+  display: inline-block;
+  animation: thanksBeat 1.6s ease-in-out infinite;
+}
+
+@keyframes thanksBeat {
+  0%, 100% { transform: scale(1); }
+  14% { transform: scale(1.25); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.15); }
+  56% { transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .thanks-heart {
+    animation: none;
+  }
+}

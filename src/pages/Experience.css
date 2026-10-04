@@ -1,0 +1,191 @@
+/* src/pages/Experience.css */
+.experience {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.experience-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.experience-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: expFadeUp 0.8s ease-out;
+}
+
+.experience-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #00ff88 0%, #0066ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.experience-subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.job-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+  backdrop-filter: blur(10px);
+  animation: expFadeUp 1s ease-out;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+}
+
+.job-role {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.job-company {
+  margin-top: 0.3rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #00ff88;
+}
+
+.job-about {
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+.job-period {
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #00ff88;
+  background: rgba(0, 255, 136, 0.1);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  white-space: nowrap;
+}
+
+.job-summary {
+  color: #dddddd;
+  line-height: 1.7;
+  margin-bottom: 1.6rem;
+}
+
+.job-groups {
+  display: grid;
+  gap: 2rem;
+}
+
+.job-group-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.job-group-title::before {
+  content: '';
+  width: 22px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(135deg, #00ff88 0%, #0066ff 100%);
+}
+
+.job-points {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.job-points li {
+  position: relative;
+  padding-left: 1.4rem;
+  color: #cccccc;
+  line-height: 1.65;
+}
+
+.job-points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00ff88;
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.6);
+}
+
+.job-stack {
+  margin-top: 2.2rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.job-chips {
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.job-chip {
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: #00ff88;
+  background: rgba(0, 255, 136, 0.08);
+  border: 1px solid rgba(0, 255, 136, 0.25);
+}
+
+@keyframes expFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+    padding: 1rem;
+  }
+
+  .experience-title {
+    font-size: 2.6rem;
+  }
+
+  .job-card {
+    padding: 1.5rem;
+  }
+
+  .job-role {
+    font-size: 1.5rem;
+  }
+}
